@@ -21,7 +21,7 @@ No Foundry terminal faça:
 - Colocar PDFs em inputs/
 - Faça upload via interface do Foundry para a pasta inputs/ ou use az storage blob upload se usar Blob Storage.
 
-Configurar segredos / variáveis no Azure Foundry
+## Configurar segredos / variáveis no Azure Foundry
 No painel do Foundry (UI) procure seção de Environment / Secrets e defina:
 - AZURE_OPENAI_ENDPOINT = https://seu-openai-endpoint
 - AZURE_OPENAI_KEY = sua_chave_openai
@@ -29,10 +29,11 @@ No painel do Foundry (UI) procure seção de Environment / Secrets e defina:
 - AZURE_SEARCH_API_KEY = sua_chave_search
 - INDEX_NAME = pdf-index
 - STORAGE_CONNECTION_STRING = (se usar)
-Se não houver UI, exporte localmente no terminal (temporário):
+
+### Se não houver UI, exporte localmente no terminal (temporário):
 <img width="1070" height="335" alt="image" src="https://github.com/user-attachments/assets/18d18513-818c-4c79-97f1-05a9563fbcd5" />
 
-Instalar dependências (no terminal do Foundry)
+### Instalar dependências (no terminal do Foundry)
 <img width="864" height="287" alt="image" src="https://github.com/user-attachments/assets/9520035f-af34-4942-84c6-18e0e6429810" />
 
 # Fluxo de execução (comandos no Foundry):
@@ -40,6 +41,29 @@ Instalar dependências (no terminal do Foundry)
 <img width="1395" height="362" alt="image" src="https://github.com/user-attachments/assets/98193257-0aad-44dc-b35e-8e47053bb094" />
 <img width="1412" height="335" alt="image" src="https://github.com/user-attachments/assets/92aa8aa6-22ce-4965-a20e-adb8c17c92c0" />
 
+---
+✨ Dicas simples para iniciantes
+- 🧪 Teste com poucos PDFs primeiro — comece com 1–3 arquivos pequenos para entender o fluxo e economizar custo.
+- 🎯 Use top 3–5 trechos (top K) como contexto para o modelo; economiza tokens e aumenta a precisão.
+- 🔁 Mantenha overlap no chunking (ex.: 100–200 caracteres) para evitar perda de frases entre pedaços.
+- 🔍 Verifique os trechos recuperados quando a resposta não estiver clara — o sistema só responde com o que encontra nos PDFs.
+- 💸 Monitore custo e uso de API — prefira modelos/embeddings menores na fase de testes.
+- 🏷️ Adicionar metadados é útil (autor, título, ano) para permitir filtros e facilitar referências.
+- 🔐 Não exponha chaves — guarde segredos/variáveis no gerenciador do Foundry ou em variáveis de ambiente, nunca no repositório.
+- 📝 Documente o processo: logs de ingestão, indexação e exemplos de perguntas/respostas enriquecem o portfólio.
+
+---
+💡 O que aprendi
+- 🧭 A busca vetorial supera palavras-chave
+Aprendi que a busca vetorial permite encontrar trechos semanticamente relevantes mesmo quando as perguntas não usam as mesmas palavras dos documentos.
+- 🧩 Chunking é crucial para precisão
+Percebi que dividir os PDFs em pedaços com overlap melhora muito a recuperação de contexto e evita respostas truncadas.
+- ⚖️ Balancear custo e qualidade
+Descobri que testar com modelos e embeddings menores economiza crédito sem comprometer a validação inicial do fluxo.
+- 🔒 RAG torna as respostas verificáveis
+Ao devolver ao modelo apenas trechos recuperados dos PDFs, as respostas ficam mais alinhadas aos documentos e fáceis de checar.
+- 🗂️ Metadados e filtros aumentam utilidade prática
+Notei que adicionar metadados e permitir filtragem facilita citar fontes e correlacionar ideias durante a revisão de literatura.
 
 
 
