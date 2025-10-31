@@ -1,0 +1,20 @@
+A engenharia de software moderna adota metodologias ágeis para reduzir riscos e entregar valor de forma contínua.
+Práticas de DevOps integram desenvolvimento e operações, acelerando o ciclo de feedback.
+Testes automatizados são fundamentais para garantir regressões mínimas em mudanças frequentes.
+Testes de unidade isolam componentes e facilitam a identificação de defeitos em estágios iniciais.
+Testes de integração validam a interação entre módulos e diminuem falhas em produção.
+Estratégias de teste baseadas em riscos priorizam cenários críticos para reduzir custos.
+A elicitação de requisitos deve envolver stakeholders para captar necessidades reais do usuário.
+Requisitos bem documentados melhoram a rastreabilidade e facilitam mudanças controladas.
+Modelos UML ajudam a comunicar a arquitetura entre equipes técnicas e não técnicas.
+Protótipos de baixa fidelidade aceleram a validação de hipóteses de design com usuários.
+Sprints curtos permitem ajustes rápidos e aprendizagem contínua durante o projeto.
+Retrospectivas ajudam a equipe a identificar melhorias de processo e comportamento.
+Embeddings transformam texto em vetores numéricos que capturam similaridade semântica.
+A busca vetorial permite recuperar documentos por significado, não apenas por palavras-chave.
+Retrieval-Augmented Generation combina busca em documentos com geração de respostas pelo modelo.
+Métricas de cobertura devem ser usadas como guia, não como objetivo final para qualidade.
+Revisões de código colaborativas aumentam a qualidade do software e o compartilhamento de conhecimento.
+Publicar dados e scripts auxilia a verificação independente dos resultados.
+Viés em dados pode distorcer conclusões; é necessário identificar e mitigar vieses.
+Conclusões devem propor direções futuras e implicações práticas do estudo.
