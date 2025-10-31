@@ -65,6 +65,20 @@ Ao devolver ao modelo apenas trechos recuperados dos PDFs, as respostas ficam ma
 - 🗂️ Metadados e filtros aumentam utilidade prática
 Notei que adicionar metadados e permitir filtragem facilita citar fontes e correlacionar ideias durante a revisão de literatura.
 
+---
+### ⚠️ Aviso sobre uso de IA
+
+Este conteúdo foi gerado com o auxílio de inteligência artificial — **Copilot** — e serve como material de apoio à documentação do projeto. A IA foi utilizada para estruturar textos, sugerir trechos e formatar o README, incluindo exemplos e prints simulados.
+
+**Observações importantes**
+- **Ferramenta usada:** Copilot (versão atual disponibilizada no ambiente).  
+- **Revisão humana:** todo o conteúdo gerado pela IA foi lido, ajustado e validado por mim, **Cristiane Reindel**, antes da publicação.  
+- **Responsabilidade:** decisões técnicas, adaptações do código e informações sensíveis devem ser conferidas com atenção humana; o material pode exigir ajustes para refletir seu ambiente e credenciais reais.  
+- **Uso ético:** não compartilhe chaves ou segredos; verifique conformidade com políticas de privacidade e licenciamento antes de publicar ou distribuir dados.
+
+**Cristiane Reindel**🦄
+
+
 
 
 
